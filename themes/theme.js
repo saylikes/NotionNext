@@ -4,6 +4,7 @@ import { getQueryParam, getQueryVariable, isBrowser } from '../lib/utils'
 import dynamic from 'next/dynamic'
 import getConfig from 'next/config'
 import * as ThemeComponents from '@theme-components'
+THEME: process.env.NEXT_PUBLIC_THEME || 'hexo', // 锁定默认主题为hexo
 // 所有主题在next.config.js中扫描
 export const { THEMES = [] } = getConfig().publicRuntimeConfig
 /**
